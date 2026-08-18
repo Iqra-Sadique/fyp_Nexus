@@ -1,0 +1,133 @@
+.main-content {
+    flex: 1;
+    padding: 40px 55px;
+    background: #f8fafc;
+}
+
+.report-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.report-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.report-top h1 {
+    font-size: 32px;
+    margin: 0 0 8px;
+    font-weight: 600;
+}
+
+.report-top p {
+    color: #64748b;
+    margin: 0;
+}
+
+.download-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #2563eb;
+}
+
+/* cards */
+.report-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.report-card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.info span {
+    color: #64748b;
+}
+
+.summary {
+    display: flex;
+    gap: 80px;
+}
+
+.summary p {
+    color: #64748b;
+    margin-bottom: 5px;
+}
+
+.summary h3 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* similar projects */
+.report-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 15px;
+}
+
+.report-item strong {
+    color: #2563eb;
+
+}
+
+
+
+/* Recommendations */
+.report-card p {
+    color: #475569;
+    padding: 8px 0;
+    margin: 0;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 30px 20px;
+    }
+
+    .report-top {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .download-btn {
+        width: 100%;
+    }
+
+    .summary {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,142 @@
+.main-content {
+    flex: 1;
+    padding: 40px 55px;
+    background: #f8fafc;
+}
+
+.results-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.results-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.results-top h1 {
+    font-size: 32px;
+    margin: 0 0 8px;
+    font-weight: 600;
+}
+
+.results-top p {
+    color: #64748b;
+    margin: 0;
+}
+
+/* Generate Report */
+.report-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.report-btn:hover {
+    background: #2563eb;
+
+}
+
+/* Score Cards */
+.score-row {
+    margin-bottom: 10px;
+}
+
+.score-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 22px;
+    height: 100%;
+}
+
+.score-card p {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.score-card h2 {
+    font-size: 32px;
+    margin: 0 0 5px;
+}
+
+.score-card small {
+    color: #94a3b8;
+}
+
+/* Result Sections */
+.result-section {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.result-section h2 {
+    font-size: 21px;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+/* similar theses */
+.similar-item {
+    margin-bottom: 22px;
+}
+
+.similar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.similar-item strong {
+    color: #1b7c23;
+}
+
+.progress {
+    height: 9px;
+    background: rgb(234, 231, 231);
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+/* Suggestions */
+.suggestion {
+    padding: 12px 0;
+    color: #475569;
+    border-bottom: 1px solid #e2e8f0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .main-content {
+        padding: 30px 20px;
+    }
+
+    .results-top {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .report-btn {
+        width: 100%;
+    }
+}

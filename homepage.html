@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYP Nexus</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-placeholder">FN</div>
+                <h2>FYP Nexus</h2>
+            </div>
+            <ul>
+                <li><a href="#">Past Projects</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+
+            <div class="buttons">
+                <button id="loginBtn">Student Login</button>
+                <button id="openModal">Get Started</button>
+            </div>
+        </nav>
+    </header>
+    <hr class="nav-line">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Make your idea impossible to mistake for last year's</h1>
+            <p>
+                FYP Nexus helps computing students verify their
+                final year project proposals against the university
+                archive. We flag duplicate topics and use AI to
+                suggest unique, refined ideas so your project gets
+                approved faster.
+            </p>
+            <button id ="openModal2">Analyze your Proposal</button>
+            <p class="note"> 📌 Exclusively for University Students & Faculty.</p>
+        </div>
+    </section>
+    <footer>
+    <div class="footer-container">
+        <!-- Logo & Description -->
+        <div class="footer-column">
+            <h2>FYP Nexus</h2>
+            <p>
+                AI-assisted proposal refinement for final year students,
+                built on your own university's thesis archive.
+            </p>
+        </div>
+        <!-- Product -->
+        <div class="footer-column">
+            <h3>Product</h3>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
+        </div>
+        <!-- Company -->
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Supervisor Access</a></li>
+            </ul>
+        </div>
+        <!-- Legal -->
+        <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Data Handling</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <!--  Footer -->
+    <div class="footer-bottom">
+        <p>© 2026 FYP Nexus. A final year project.</p>
+        <p>Made for students, by a student.</p>
+    </div>
+</footer>
+<!-- Registration Popup -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <button id="closeRegister" class="close">&times;</button>
+        <div class="modal-logo"> FN </div>
+        <h2>Student Registration</h2>
+        <p>Sign up with your university credentials</p>
+
+        <form id="registerForm">
+            <label>Full Name</label>
+            <input type="text" placeholder="e.g. Hira Khan" required>
+            <label>Student ID</label>
+            <input type="text" placeholder="e.g. 2401-BSSE001" required>
+            <label>Student Email</label>
+            <input type="email" id="registerEmail" placeholder="student@university.edu.pk" required>
+            <label>Password</label>
+            <input type="password" id="registerPassword" placeholder="********" required>
+            <button type="submit">Create Account</button>
+        </form>
+        <small>
+            By registering, you acknowledge this is an academic FYP
+            prototype and not a commercial product.
+        </small>
+    </div>
+</div>
+
+<!-- Login Popup -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <button id="closeLogin" class="close">&times;</button>
+        <div class="modal-logo"> FN </div>
+        <h2>Student Login</h2>
+        <p>Login using your university account</p>
+        <form id="loginForm">
+            <label>Email</label>
+            <input type="email" id="loginEmail" placeholder="student@university.edu.pk" required>
+            <label>Password</label>
+            <input type="password" id="loginPassword" placeholder="Enter Password"  required >
+            <button type="submit">Login</button>
+        </form>
+        <p class="signup-text">
+            Don't have an account?
+            <a href="#" id="showSignup">Sign Up</a>
+        </p>
+    </div>
+</div>
+<script src="homepage.js"></script>
+</body>
+</html>
